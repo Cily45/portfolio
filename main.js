@@ -1,0 +1,6 @@
+import "./component/AppHeader.js"
+import "./component/AppHome.js"
+import "./component/AppAbout.js"
+import "./component/AppContact.js"
+import "./component/AppProjects.js"
+import "./component/AppFooter.js"
