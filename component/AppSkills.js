@@ -2,23 +2,23 @@ class AppSkills extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <section class="pt-20 min-h-screen text-center" id="skills">
-        <h2 class="text-xl my-4">Mes compétences</h2>
+        <h2 class="text-3xl my-4">Mes compétences</h2>
         <div class="space-y-4">
             <div class="space-y-2">
                 <p>Language de programmation</p>
-                <div class="h-30 flex flex-row justify-center px-4 min-w-full m-auto space-x-4 overflow-x-auto scrollbar-none ">
+                <div class="h-35 flex flex-row justify-center px-4 min-w-full m-auto space-x-4 overflow-x-auto scrollbar-none ">
                     ${this.getIcons(this.iconsLanguages)}
                 </div>
             </div>
             <div>
                 <p>Framworks</p>
-                <div class="h-30 flex flex-row justify-center px-4  min-w-full m-auto space-x-4 overflow-x-auto scrollbar-none ">
+                <div class="h-35 flex flex-row justify-center px-4  min-w-full m-auto space-x-4 overflow-x-auto scrollbar-none ">
                     ${this.getIcons(this.iconsFramworks)}
                 </div>
             </div>
             <div>
                 <p>Autres</p>
-                <div class="h-30 flex flex-row justify-center  px-4  min-w-full m-auto space-x-4 overflow-x-auto scrollbar-none ">
+                <div class="h-35 flex flex-row justify-center px-4  min-w-full m-auto space-x-4 overflow-x-auto scrollbar-none ">
                     ${this.getIcons(this.iconsOthers)}
                 </div>
             </div>
@@ -29,9 +29,9 @@ class AppSkills extends HTMLElement {
     }
     iconTemplate(icon) {
         return `
-<div class="h-20 w-20 shrink-0 snap-center capitalize text-center">
+<div class="w-25 h-30 bg-white border-2 border-purple-900 shadow-lg shadow-purple-500 p-2 rounded-xl shrink-0 snap-center capitalize text-center">
   ${icon.svg}
-  ${icon.title}
+  <span class="text-black">${icon.title}</span>
   </div>
     `;
     }

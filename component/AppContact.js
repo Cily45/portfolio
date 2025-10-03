@@ -2,7 +2,7 @@ class AppContact extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
 <section class="flex flex-col items-center space-y-4 justify-center p-6" id="contact">
-<h2 class="text-xl">Contact</h2>
+<h2 class="text-3xl">Contact</h2>
 <p>📞 Téléphone: 06.78.81.18.41</p>
 <p>✉️ fischer.ccile@gmail.fr</p>
 

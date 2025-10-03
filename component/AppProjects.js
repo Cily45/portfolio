@@ -34,7 +34,7 @@ class AppProjects extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
       <section class="flex flex-wrap gap-6 items-center justify-center pt-20 min-h-screen" id="projects">
-        <p class="w-full text-center text-xl font-bold mb-6">Mes projets</p>
+        <h2 class="w-full text-center text-3xl font-bold mb-6">Mes projets</h2>
         <div class="flex flex-row space-x-8 overflow-x-auto scrollbar-none px-4 py-10">
         ${this.getCards()}
         </div>
