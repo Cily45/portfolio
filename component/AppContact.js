@@ -4,7 +4,7 @@ class AppContact extends HTMLElement {
         this.innerHTML = `
 <section class="flex flex-col h-screen justify-between items-center space-y-4 pt-24 pb-4" id="contact">
 <h2 class="text-3xl">Contact</h2>
-<div>
+<div class="flex flex-col items-center">
 <a href="tel:0678811841" class="cursor-pointer">📞 Téléphone: 06.78.81.18.41</a>
 <a href="mailto:fischer.ccile@gmail.fr" class="cursor-pointer">✉️ fischer.ccile@gmail.fr</a>
 </div>
